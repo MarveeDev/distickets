@@ -15,7 +15,7 @@ npm install distickets
 ```javascript
 const discord = require('discord.js')
 const client = new discord.Client({intents: [discord.Intents.FLAGS.GUILDS, discord.Intents.FLAGS.GUILD_MESSAGES]});
-const { Ticket, TicketInteraction } = require('./index.js')
+const { Ticket, TicketInteraction } = require('distickets')
 
 
 client.on('messageCreate', async message => {
@@ -74,8 +74,8 @@ client.login('TOKEN')
 ```
 
 ## ScreenShots
-![Screenshot 2020-02-09 at 5 08 54 PM](https://cdn.discordapp.com/attachments/873616872061435986/876796336203243541/unknown.png)
+![ticket create embed](https://cdn.discordapp.com/attachments/873616872061435986/876796336203243541/unknown.png)
 
-![Ticket](https://cdn.discordapp.com/attachments/876796417878941786/876796447662698547/unknown.png)
+![Ticket Open](https://cdn.discordapp.com/attachments/876796417878941786/876796447662698547/unknown.png)
 
-![Ticket](https://cdn.discordapp.com/attachments/873616872061435986/876796661563797524/unknown.png)
+![Ticket Close](https://cdn.discordapp.com/attachments/873616872061435986/876796661563797524/unknown.png)
