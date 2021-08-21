@@ -51,10 +51,10 @@ class TicketInteraction {
           if(ticketgiaaperto){
           
               const ticketopen = new Discord.MessageEmbed()
-              .setTitle(option.ticketOpenTitle || "ERROR")
-              .setDescription(option.ticketOpenDescription || "You already have a ticket opened!")
-              .setFooter(option.ticketOpenFooter || `${this.interaction.guild.name}`)
-              .setColor(option.ticketOpenColor || "BLACK")
+              .setTitle(this.config.ticketOpenTitle || "ERROR")
+              .setDescription(this.config.ticketOpenDescription || "You already have a ticket opened!")
+              .setFooter(this.config.ticketOpenFooter || `${this.interaction.guild.name}`)
+              .setColor(this.config.ticketOpenColor || "BLACK")
              this.interaction.member.send({ embeds: [ticketopen] });
           
           } else if(!ticketgiaaperto){
