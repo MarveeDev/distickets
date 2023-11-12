@@ -1,6 +1,6 @@
-# DisTickets
+# DisTickets [Deprecated]
 
-Discord-Ticket is an npm package who allows you to create a perfectly working ticket system with buttons!.
+Discord-Ticket was an npm package who allowed you to create a perfectly working ticket system with buttons!.
 
 ## Installation
 
