@@ -80,22 +80,23 @@ class TicketInteraction {
           
           let rowch = new MessageActionRow()
             .addComponents(
-                new MessageButton()
-                .setCustomId("ticket_close")
-                .setStyle("DANGER")
-                .setLabel(this.config.closeButton ||"Close Ticket")
-                .setEmoji(this.config.closeEmoji || `❎`)
-                        )
-          const embedcreated = new Discord.MessageEmbed()
-          .setColor(this.config.openColor)
-          .setAuthor(this.interaction.user.tag, this.interaction.user.displayAvatarURL())
-          .setTitle(this.config.openTitle ||"Ticket Support")
-          .setDescription(this.config.openDesc ||`Wait for a staffer.`)
-          .setThumbnail(this.interaction.user.displayAvatarURL())
-          .setFooter(this.config.openFooter || "Powered by distickets")
-          .setTimestamp()
-          canale.send({ content: `<@&${this.config.roleView}>,` || `${this.interaction.user},`, embeds: [embedcreated], components: [rowch] })
-          
+            new MessageButton()
+            .setCustomId("ticket_close")
+            .setStyle("DANGER")
+            .setLabel(this.config.closeButton ||"Close Ticket")
+            .setEmoji(this.config.closeEmoji || `❎`))
+              
+                            
+            const embedcreated = new Discord.MessageEmbed()
+              .setColor(this.config.openColor)
+              .setAuthor(this.interaction.user.tag, this.interaction.user.displayAvatarURL())
+              .setTitle(this.config.openTitle ||"Ticket Support")
+              .setDescription(this.config.openDesc ||`Wait for a staffer.`)
+              .setThumbnail(this.interaction.user.displayAvatarURL())
+              .setFooter(this.config.openFooter || "Powered by distickets")
+              .setTimestamp()
+              canale.send({ content: `<@&${this.config.roleView}>,` || `${this.interaction.user},`, embeds: [embedcreated], components: [rowch] })
+                  
                   
                       })
           }
